@@ -4,10 +4,10 @@
 
 Java é uma linguagem de programação orientada a objetos. Seu principal objetivo é representar elementos do mundo real por meio de classes e objetos.
 
-* Classe: é o molde ou modelo que define as características (atributos) e comportamentos (métodos) de um objeto.
-* Objeto: é uma instância criada a partir de uma classe.
-* Atributos: representam as características de um objeto, como nome, cor, idade ou marca.
-* Métodos: representam as ações que um objeto pode executar. Métodos do tipo void realizam uma ação sem retornar um valor.
+* **Classe (Class):** é o molde ou modelo que define as características (atributos) e comportamentos (métodos) de um objeto.
+* **Objeto (Object):** é uma instância criada a partir de uma classe.
+* **Atributos:** representam as características de um objeto, como nome, cor, idade ou marca.
+* **Métodos:** representam as ações que um objeto pode executar. Métodos declarados com `void` realizam uma ação sem retornar um valor.
 
 ---
 
@@ -15,20 +15,20 @@ Java é uma linguagem de programação orientada a objetos. Seu principal objeti
 
 Keywords são palavras reservadas da linguagem Java. Elas possuem significados específicos e não podem ser utilizadas como nomes de variáveis, métodos ou classes.
 
-Principais keywords:
+Algumas das principais keywords:
 
-* class → declara uma classe.
-* public → permite acesso ao elemento de qualquer lugar.
-* private → restringe o acesso ao elemento apenas dentro da própria classe.
-* static → pertence à classe, e não ao objeto.
-* new → cria uma nova instância (objeto).
-* void → indica que um método não retorna nenhum valor.
-* return → retorna um valor de um método.
-* if / else → executam decisões condicionais.
-* switch / case → selecionam uma ação entre diversas opções.
-* for e while → executam estruturas de repetição.
-* break → interrompe um laço de repetição ou um switch.
-* continue → pula para a próxima repetição do laço.
+* `class` → declara uma classe.
+* `public` → permite acesso ao elemento de qualquer lugar.
+* `private` → restringe o acesso ao elemento apenas dentro da própria classe.
+* `static` → pertence à classe, e não ao objeto.
+* `new` → cria uma nova instância (objeto).
+* `void` → indica que um método não retorna nenhum valor.
+* `return` → retorna um valor de um método.
+* `if` / `else` → executam decisões condicionais.
+* `switch` / `case` → selecionam uma ação entre diversas opções.
+* `for` e `while` → executam estruturas de repetição.
+* `break` → interrompe um laço de repetição ou um `switch`.
+* `continue` → pula para a próxima repetição do laço.
 
 ---
 
@@ -36,14 +36,16 @@ Principais keywords:
 
 Os tipos primitivos armazenam valores simples diretamente na memória.
 
-* byte → números inteiros pequenos.
-* short → números inteiros pequenos.
-* int → números inteiros.
-* long → números inteiros grandes.
-* float → números decimais.
-* double → números decimais com maior precisão.
-* char → um único caractere.
-* boolean → verdadeiro ou falso.
+| Tipo      | Finalidade                  | Exemplo          |
+| --------- | --------------------------- | ---------------- |
+| `byte`    | Inteiros pequenos           | 100              |
+| `short`   | Inteiros pequenos           | 30000            |
+| `int`     | Inteiros                    | 22               |
+| `long`    | Inteiros grandes            | 1000000L         |
+| `float`   | Decimais                    | 5.5f             |
+| `double`  | Decimais com maior precisão | 3.14159          |
+| `char`    | Um único caractere          | 'A'              |
+| `boolean` | Verdadeiro ou falso         | `true` / `false` |
 
 ---
 
@@ -53,8 +55,6 @@ Os tipos primitivos armazenam valores simples diretamente na memória.
 
 Utilizados para atribuir valores às variáveis.
 
-Exemplo:
-
 ```java
 int idade = 22;
 idade += 1;
@@ -63,34 +63,40 @@ idade *= 3;
 idade /= 2;
 ```
 
+---
+
 ### Operadores aritméticos
 
 Realizam operações matemáticas.
 
-* Soma (+)
-* Subtração (-)
-* Multiplicação (*)
-* Divisão (/)
-* Resto da divisão (%)
+* `+` → Soma
+* `-` → Subtração
+* `*` → Multiplicação
+* `/` → Divisão
+* `%` → Resto da divisão
+
+---
 
 ### Operadores relacionais
 
-Comparam valores e retornam um resultado booleano (true ou false).
+Comparam valores e retornam um resultado booleano (`true` ou `false`).
 
-* Igual (==)
-* Diferente (!=)
-* Maior que (>)
-* Menor que (<)
-* Maior ou igual (>=)
-* Menor ou igual (<=)
+* `==` → Igual
+* `!=` → Diferente
+* `>` → Maior que
+* `<` → Menor que
+* `>=` → Maior ou igual
+* `<=` → Menor ou igual
+
+---
 
 ### Operadores lógicos
 
 São utilizados para combinar condições booleanas.
 
-* && → E
-* || → OU
-* ! → NÃO
+* `&&` → E (todas as condições devem ser verdadeiras).
+* `||` → OU (pelo menos uma condição deve ser verdadeira).
+* `!` → NÃO (inverte o valor booleano).
 
 Exemplo:
 
@@ -104,16 +110,26 @@ boolean podeDirigir = idade >= 18 && possuiCNH;
 
 É comum utilizar nomes que expressem perguntas, tornando o código mais legível.
 
-* isOpen → Está aberto?
-* isWrong → Está errado?
-* canDrive → Pode dirigir?
-* hasLicense → Possui habilitação?
+Exemplos:
 
-Essas variáveis armazenam apenas dois valores possíveis: true ou false.
+* `isOpen` → Está aberto?
+* `isWrong` → Está errado?
+* `canDrive` → Pode dirigir?
+* `hasLicense` → Possui habilitação?
+
+Essas variáveis sempre armazenam `true` ou `false`.
 
 ---
 
 ## Conclusão
 
-Dominar os conceitos básicos do Java é essencial para compreender a Programação Orientada a Objetos. Entender classes, objetos, atributos, métodos, keywords, tipos primitivos e operadores permite desenvolver códigos mais organizados, legíveis e fáceis de manter, servindo como base para estudos mais avançados da linguagem.
+## Conclusão
+
+Compreender os fundamentos do Java é o primeiro passo para desenvolver uma base sólida em programação. Conceitos como classes, objetos, atributos e métodos ajudam a representar elementos do mundo real dentro do código, tornando o desenvolvimento mais organizado e intuitivo.
+
+Além disso, conhecer as keywords permite entender como a linguagem funciona e como o Java interpreta cada instrução. Os tipos primitivos são essenciais para armazenar diferentes tipos de dados, enquanto os operadores possibilitam realizar cálculos, comparações e tomadas de decisão, sendo fundamentais para a construção da lógica de qualquer programa.
+
+Dominar esses conceitos facilita a leitura, a escrita e a compreensão do código, preparando o desenvolvedor para aprender temas mais avançados da linguagem, como Programação Orientada a Objetos, coleções, tratamento de exceções e desenvolvimento de aplicações.
+
+
 
