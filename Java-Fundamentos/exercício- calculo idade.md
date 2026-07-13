@@ -22,7 +22,23 @@ Criar um programa que:
 ## 💻 Código
 
 ```java
-// Seu código aqui
+// import java.util.Scanner;
+public class App {
+    public static void main(String[] args) {
+        int anoAtual = 2026;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("escreva seu nome:");
+        String nome = scanner.nextLine();
+         System.out.println("infome o seu ano de nascimento:");
+        int anoNascimento = scanner.nextInt();
+        int idade = anoAtual - anoNascimento;
+        System.out.printf("Olá %s, você tem %d anos ", nome, idade);
+scanner.close();
+    }
+}
+
+
+
 ```
 
 ---
